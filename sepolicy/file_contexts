@@ -15,7 +15,7 @@
 /sys/homebutton/enable_wakeup                               u:object_r:sysfs_homebutton:s0
 
 # CMHW
-/sys/devices/virtual/timed_output/vibrator/vtg_level        u:object_r:vibeamp_sysfs:s0
+#/sys/devices/virtual/timed_output/vibrator/vtg_level        u:object_r:vibeamp_sysfs:s0
 
 # Motorola services
 /data/chargeonlymode(/.*)?                                  u:object_r:chargeonly_data_file:s0

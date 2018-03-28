@@ -1,1 +1,5 @@
-allow system_server vibeamp_sysfs:file rw_file_perms;
+allow system_server vibeamp_sysfs:file rw_file_perms; #vibeamp_sysfs is no more... i had to comment it out as it seems to be in cm already
+
+#audit2allow - hackintosh5 - penn5 - TODO: both are suspect
+#allow system_server init:binder { call transfer };
+allow system_server init:unix_stream_socket { read write };

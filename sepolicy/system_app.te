@@ -1,1 +1,12 @@
 allow system_app sysfs_homebutton:file rw_file_perms;
+
+#audit2allow - hackintosh5 - penn5 - both of these are a bit suspect TODO:
+#allow system_app init:binder call;
+allow system_app init:unix_stream_socket { read write };
+#allow system_app installd:binder call;
+#allow system_app installd_service:service_manager find;
+#allow system_app netd:binder call;
+#allow system_app netd_service:service_manager find;
+allow system_app qseeproxy:binder call;
+#allow system_app storaged:binder call; - causes build to fail
+allow system_app wificond:binder call;

@@ -4,3 +4,10 @@ allow toolbox persist_file:file getattr;
 allow toolbox property_socket:sock_file write;
 allow toolbox self:capability chown;
 allow toolbox sysfs:file setattr;
+#audit2allow - hackintosh5 - penn5 - should we allow the toolbox what it has asked for? I think no but uncomment if it is wrong! It does look very unsafe.
+#allow toolbox bluetooth_prop:property_service set;
+#allow toolbox ctl_rildaemon_prop:property_service set;
+#allow toolbox default_prop:property_service set;
+#allow toolbox init:unix_stream_socket connectto;
+#allow toolbox proc:file { getattr open read };
+#allow toolbox system_prop:property_service set;

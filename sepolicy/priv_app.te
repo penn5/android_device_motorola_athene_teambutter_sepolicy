@@ -1,1 +1,8 @@
 #allow priv_app exfat:dir rw_dir_perms;
+
+#audit2allow - hackintosh5 - penn5
+#allow priv_app device:dir open; #looks suspect TODO:
+#allow priv_app init:binder call; #ok
+allow priv_app init:unix_stream_socket { read write }; #ok
+#allow priv_app proc_interrupts:file open; #interrupt procs... weird...
+#allow priv_app rfs_system_file:dir getattr; #???

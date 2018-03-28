@@ -1,0 +1,4 @@
+#audit2allow - hackintosh5 - penn5
+allow cameraserver init:unix_dgram_socket sendto;
+#allow cameraserver default_android_service:service_manager add;
+

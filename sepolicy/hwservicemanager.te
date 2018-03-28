@@ -1,0 +1,5 @@
+#audit2allow - hackintosh5 - penn5
+#allow hwservicemanager init:binder call;
+allow hwservicemanager init:dir search;
+allow hwservicemanager init:file { open read }; #really?
+allow hwservicemanager init:process getattr;

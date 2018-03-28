@@ -1,0 +1,6 @@
+#audit2allow - hackintosh5 - penn5
+#allow servicemanager init:binder transfer;
+allow servicemanager init:dir search;
+allow servicemanager init:file { open read };
+allow servicemanager init:process getattr;
+

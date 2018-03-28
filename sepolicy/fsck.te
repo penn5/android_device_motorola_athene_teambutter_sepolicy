@@ -1,2 +1,5 @@
+
 allow fsck cache_block_device:blk_file rw_file_perms;
 allow fsck persist_block_device:blk_file rw_file_perms;
+#audit2allow - hackintosh5 - penn5
+#allow fsck block_device:blk_file { ioctl open read write }; #TODO: FIXME: THIS IS WRONG: FIX THE FILE_CONTEXTS - p46 is cachefs. THIS IS IN TESTING IN FILE_CONTEXTS.

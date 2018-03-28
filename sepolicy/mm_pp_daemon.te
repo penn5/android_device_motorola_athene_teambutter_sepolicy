@@ -1,0 +1,2 @@
+#audit2allow - hackintosh5 - penn5
+allow mm-pp-daemon system_prop:property_service set; #should be much more precise TODO: FIXME:
